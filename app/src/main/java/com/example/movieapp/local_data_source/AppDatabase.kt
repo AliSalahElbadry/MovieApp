@@ -8,7 +8,7 @@ import com.example.movieapp.model.Item
 
 @Database(entities = [Item::class], version =1 )
 abstract class AppDataBase: RoomDatabase() {
- abstract fun getLocationDao(): MovieDAO
+ abstract fun getMovieDao(): MovieDAO
  companion object{
   @Volatile
   private var INSTANCE: AppDataBase? = null
